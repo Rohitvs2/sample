@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>wt lab experiment -3</title>
+<style>
+#cc{
+color:red;
+font:20px verdana;
+font-weight:bold;
+</style>
+<script type="text/javascript">
+function getcapital()
+{
+var x;
+x=parseInt(document.getElementById("c").value);
+switch(x)
+{
+case 1:document.getElementById("cc").value="New Delhi";break;
+case 2:document.getElementById("cc").value="Mascow";break;
+case 3:document.getElementById("cc").value="Nairobi";break;
+case 4:document.getElementById("cc").value="Beizing";break;
+case 5:document.getElementById("cc").value="Koulalumpur";break;
+}
+}
+</script>
+</head>
+<body>
+<form name="f1" method="POST()">
+<b>
+Select Country:<select id="c" name="c" onChange=getcapital()>
+<option>-select country-</option>
+<option value="1">India</option>
+<option value="2">Russia</option>
+<option value="3">Kenya</option>
+<option value="4">China</option>
+<option value="5">Singapur</option>
+</select>
+Capital city:<input type="label" id="cc" name="cc"  width="30" />
+</b>
+</form>
+</body>
+</html>
